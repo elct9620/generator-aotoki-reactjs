@@ -27,6 +27,37 @@ Finally, initiate the generator:
 yo aotoki-reactjs
 ```
 
+## Usage
+
+This project will generated `gulp` task, and written in `iojs-1.8`, and use some ES6 feature.
+I strong suggest use `iojs-1.8` to work with this project.
+
+To start coding, you need gulp installed.
+
+```bash
+npm install -g gulp
+```
+
+### Start project
+
+To coding your ReactJS project, just run:
+
+```bash
+gulp
+```
+
+### Tasks
+
+To find available task, run:
+
+```bash
+gulp help
+```
+
+### Unit Test
+
+This project already setup with bable and jest, you can simple follow the [jest gulide](https://facebook.github.io/jest/docs/tutorial-react.html) to run test.
+
 ## Roadmap
 
 * Add Flux support

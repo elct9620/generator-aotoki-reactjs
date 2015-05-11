@@ -1,6 +1,6 @@
 {
   "name": "generator-aotoki-reactjs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Reactjs generator with customize options.",
   "license": "MIT",
   "main": "app/index.js",
