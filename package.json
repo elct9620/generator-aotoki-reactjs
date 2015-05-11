@@ -1,0 +1,32 @@
+{
+  "name": "generator-aotoki-reactjs",
+  "version": "0.1.0",
+  "description": "Reactjs generator with customize options.",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "elct9620/generator-aotoki-reactjs",
+  "author": {
+    "name": "蒼時弦や",
+    "email": "",
+    "url": "https://github.com/elct9620"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "object.assign": "^2.0.1",
+    "underscore.string": "^3.0.3",
+    "yeoman-generator": "^0.19.0",
+    "yosay": "^1.0.2"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
+}

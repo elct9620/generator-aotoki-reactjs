@@ -1,0 +1,4 @@
+PARSE_APP_NAME=<%= appname %>
+PARSE_APP_ID=<%= appId %>
+PARSE_MASTER_KEY=<%= masterKey %>
+PARSE_JAVASCRIPT_KEY=<%= jsKey %>

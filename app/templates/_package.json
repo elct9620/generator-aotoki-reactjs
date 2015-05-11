@@ -1,0 +1,45 @@
+{
+  "name": "<%= appname %>",
+  "version": "0.0.0",
+  "main": "app/app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+
+  },
+  "jest": {
+    "testPathDirs": [
+      "./app"
+    ],
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ]
+  },
+  "devDependencies": {
+    "babel-jest": "*",
+    "browser-sync": "*",<% if(options.bUseParse) { %>
+    "dotenv": "*",
+    "parse-react": "*",<% } %>
+    "jest-cli": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-bower": "*",
+    "gulp-browserify": "*",
+    "gulp-clean": "*",
+    "gulp-concat": "*",
+    "gulp-imagemin": "*",<% if(options.bUseSass) { %>
+    "gulp-sass": "*",<% } %>
+    "gulp-shell": "*",
+    "gulp-size": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-template": "*",
+    "gulp-uglify": "*",
+    "gulp-util": "*",
+    "gulp-task-listing": "*",
+    "react": "*",<% if(options.bUseFlux) { %>
+    "flux": "*",<% } %>
+    "babelify": "*"
+  }
+}

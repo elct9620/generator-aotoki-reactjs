@@ -1,0 +1,11 @@
+{
+    "applications": {
+        "<%= PARSE_APP_NAME %>": {
+            "applicationId": "<%= PARSE_APP_ID %>",
+            "masterKey": "<%= PARSE_MASTER_KEY %>"
+        },
+        "_default": {
+            "link": "<%= PARSE_APP_NAME %>"
+        }
+    }
+}
