@@ -12,7 +12,7 @@ const size = require('gulp-size')
 const reload = require('browser-sync').reload
 
 gulp.task('css', function() {
-    return  gulp.src(config.src)<% if(options.bUseScss) { %>
+    return  gulp.src(config.src)<% if(options.bUseSass) { %>
                 .pipe(sourcemaps.init())
                 .pipe(sass({
                     includePaths: config.includePaths,
@@ -28,7 +28,7 @@ gulp.task('css', function() {
 })
 
 gulp.task('css:bundle', function() {
-    return  gulp.src(config.src)<% if(options.bUseScss) { %>
+    return  gulp.src(config.src)<% if(options.bUseSass) { %>
                 .pipe(sass({
                     includePaths: config.includePaths,
                     imagePath: config.imagePath,
