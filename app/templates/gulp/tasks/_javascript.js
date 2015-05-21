@@ -13,25 +13,25 @@ const template = require('gulp-template')
 const size = require('gulp-size')
 
 gulp.task('js', function() {
-    return gulp.src(config.entry)
+    return gulp.src(config.entry)<% if(options.bUseParse) { %>
+               .pipe(template(process.env))<% } %>
                .pipe(browserify({
                    transform: ['babelify'],
                    debug: true
                }))
-               .on('error', gutil.log)<% if(options.bUseParse) { %>
-               .pipe(template(process.env))<% } %>
+               .on('error', gutil.log)
                .pipe(gulp.dest(config.tmp))
                .pipe(size({title: 'javascript'}))
 })
 
 gulp.task('js:bundle', function() {
-    return gulp.src(config.entry)
+    return gulp.src(config.entry)<% if(options.bUseParse) { %>
+               .pipe(template(process.env))<% } %>
                .pipe(browserify({
                    transform: ['babelify'],
                    debug: false
                }))
-               .pipe(uglify())<% if(options.bUseParse) { %>
-               .pipe(template(process.env))<% } %>
+               .pipe(uglify())
                .pipe(gulp.dest(config.dest))
                .pipe(size({title: 'javascript'}))
 })

@@ -21,6 +21,7 @@
     "babel-jest": "*",
     "browser-sync": "*",<% if(options.bUseParse) { %>
     "dotenv": "*",
+    "parse": "*",
     "parse-react": "*",<% } %>
     "jest-cli": "*",
     "gulp": "*",
